@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg: #F7F5EF;
+  --ink: #17211C;
+  --forest: #1B4332;
+  --soil: #B5451B;
+  --sage: #7C8F7E;
+  --line: rgba(23, 33, 28, 0.12);
+  --card-bg: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Public Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Masthead ---------- */
+
+.masthead {
+  background: var(--forest);
+  color: var(--bg);
+  padding: 2rem 1.5rem 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.masthead-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.masthead h1 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  letter-spacing: -0.01em;
+  margin: 0;
+  line-height: 0.95;
+}
+
+.masthead h1 span {
+  color: #E7B75F;
+}
+
+.masthead-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: rgba(247, 245, 239, 0.7);
+  text-align: right;
+}
+
+/* Canopy line — motivo repetido de "arcos" evocando a arborização das avenidas */
+.canopy {
+  height: 22px;
+  width: 100%;
+  margin-top: 1.4rem;
+  background-image: radial-gradient(circle at 10px -6px, transparent 12px, var(--bg) 13px);
+  background-size: 26px 22px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+/* ---------- Tabs ---------- */
+
+.tabs {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  padding: 1.5rem 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.tab {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.tab:hover { border-color: var(--soil); }
+
+.tab.active {
+  background: var(--soil);
+  border-color: var(--soil);
+  color: #fff;
+}
+
+/* ---------- Grid ---------- */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.status-line {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--sage);
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: rise 0.5s ease forwards;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(23, 33, 28, 0.1);
+}
+
+@keyframes rise {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--sage);
+}
+
+.card-body {
+  padding: 1rem 1.1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex: 1;
+}
+
+.card-tag {
+  align-self: flex-start;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--soil);
+  border: 1px solid var(--soil);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.card h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.08rem;
+  line-height: 1.28;
+  margin: 0;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--sage);
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.empty-state {
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--sage);
+  font-size: 0.9rem;
+  padding: 2rem 0;
+}
+
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--sage);
+  border-top: 1px solid var(--line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card { animation: none; opacity: 1; transform: none; }
+}
