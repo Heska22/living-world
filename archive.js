@@ -1,27 +1,26 @@
 const grid = document.getElementById('grid');
-const metaLine = document.getElementById('meta-line');
 const statusLine = document.getElementById('status-line');
 const tabs = document.querySelectorAll('.tab');
+const dateTabsEl = document.getElementById('date-tabs');
 const subjectTagsEl = document.getElementById('subject-tags');
 const themeToggle = document.getElementById('theme-toggle');
 
 let newsData = null;
 let activeCategory = 'Mundo';
 let activeTag = null;
+let activeDate = null;
 
-// ---------- Tema (claro/escuro) ----------
+// ---------- Tema ----------
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   themeToggle.textContent = theme === 'dark' ? 'modo claro' : 'modo escuro';
   localStorage.setItem('copaverde-theme', theme);
 }
-
 (function initTheme() {
   const saved = localStorage.getItem('copaverde-theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   applyTheme(saved || (prefersDark ? 'dark' : 'light'));
 })();
-
 themeToggle.addEventListener('click', () => {
   const current = document.documentElement.getAttribute('data-theme');
   applyTheme(current === 'dark' ? 'light' : 'dark');
@@ -42,6 +41,11 @@ function placeholderImage(seed) {
   return `https://picsum.photos/seed/${encodeURIComponent(seed)}/600/338`;
 }
 
+function formatDateLabel(dateStr) {
+  const [y, m, d] = dateStr.split('-');
+  return `${d}/${m}`;
+}
+
 // ---------- Render ----------
 function renderTagFilters(items) {
   const tags = [...new Set(items.map(i => i.tag).filter(Boolean))];
@@ -54,13 +58,13 @@ function renderTagFilters(items) {
     btn.textContent = tag;
     btn.addEventListener('click', () => {
       activeTag = activeTag === tag ? null : tag;
-      render(activeCategory);
+      renderCategory(activeCategory);
     });
     subjectTagsEl.appendChild(btn);
   });
 }
 
-function render(category) {
+function renderCategory(category) {
   activeCategory = category;
   tabs.forEach(t => t.classList.toggle('active', t.dataset.cat === category));
 
@@ -71,7 +75,7 @@ function render(category) {
   grid.innerHTML = '';
 
   if (items.length === 0) {
-    grid.innerHTML = '<div class="empty-state">Nenhuma matéria encontrada aqui ainda. O robô ainda não rodou, a fonte não retornou nada, ou o filtro escolhido não tem resultado — tenta limpar o filtro ou volta mais tarde.</div>';
+    grid.innerHTML = '<div class="empty-state">Nada aqui pra essa data/categoria/filtro.</div>';
     return;
   }
 
@@ -100,27 +104,54 @@ function render(category) {
   });
 }
 
+async function loadDate(dateStr) {
+  activeDate = dateStr;
+  activeTag = null;
+  document.querySelectorAll('.date-tab').forEach(t => t.classList.toggle('active', t.dataset.date === dateStr));
+
+  try {
+    const res = await fetch(`data/archive/${dateStr}.json`, { cache: 'no-store' });
+    if (!res.ok) throw new Error('edição não encontrada');
+    newsData = await res.json();
+    statusLine.textContent = `Edição de ${formatDateLabel(dateStr)}`;
+    renderCategory(activeCategory);
+  } catch (err) {
+    statusLine.textContent = 'Não consegui carregar essa edição.';
+    grid.innerHTML = '';
+  }
+}
+
 async function init() {
   try {
-    const res = await fetch('data/news.json', { cache: 'no-store' });
-    if (!res.ok) throw new Error('news.json não encontrado');
-    newsData = await res.json();
+    const res = await fetch('data/archive/index.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('sem índice de arquivo ainda');
+    const dates = await res.json();
 
-    const generated = new Date(newsData.generated_at);
-    metaLine.textContent = `Atualizado em ${generated.toLocaleDateString('pt-BR')} às ${generated.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
-    statusLine.textContent = '';
+    if (dates.length === 0) {
+      statusLine.textContent = 'Ainda não há edições arquivadas.';
+      return;
+    }
 
-    render(activeCategory);
+    dateTabsEl.innerHTML = '';
+    dates.forEach((dateStr, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'tab date-tab' + (i === 0 ? ' active' : '');
+      btn.dataset.date = dateStr;
+      btn.textContent = formatDateLabel(dateStr);
+      btn.addEventListener('click', () => loadDate(dateStr));
+      dateTabsEl.appendChild(btn);
+    });
+
+    loadDate(dates[0]);
   } catch (err) {
-    metaLine.textContent = 'Sem dados ainda';
-    statusLine.textContent = 'Ainda não há um news.json publicado — assim que o GitHub Action rodar pela primeira vez, as matérias aparecem aqui.';
+    statusLine.textContent = 'Ainda não há edições arquivadas — volte depois que o robô rodar pela primeira vez.';
   }
 }
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
     activeTag = null;
-    render(tab.dataset.cat);
+    renderCategory(tab.dataset.cat);
   });
 });
 

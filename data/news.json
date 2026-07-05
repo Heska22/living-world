@@ -1,179 +1,18 @@
 {
-  "generated_at": "2026-07-05T23:10:52.287843+00:00",
+  "generated_at": "2026-07-05T00:00:00+00:00",
   "categories": {
     "Mundo": [
       {
-        "title": "Cristo Redentor é iluminado em homenagem à independência dos EUA",
-        "source": "CNN Brasil",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVGRnaXR4TjdjRlVNenROYUpvenNQX2x3QTZlTU0xdnR4cHNUZi1RcHJ1VXkzLU9BQ1RIVXdrVDZCZGtadGJFYzhUeXhzVzI5eWtQamxzTGRzUFllV0g0VjdXNHZVY3RhbkszZkxQcVhjelloXzhEdjZXRUlHdFpsM3VqVmJxWGNjTTFlLVBPcEJScmFqSGhOVnhvZ2RscFlsZ0s2VnFqTHdtcVZFbFNqcnVWZmc?oc=5",
-        "published": "2026-07-05T11:55:02+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Tiroteio deixa 8 feridos em festa de 4 de Julho em Nova York",
-        "source": "G1",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOamo1c0l0d0htWjYyTTlvZ05wa0N0TDd4MmkxdTVkZ2NfX3RFa2Iwejc4R2tUYWo1RGpEa0hGRkRHN2dESlpiOHMwNTFJM3lnSGx5WE1hWDlsZDVmbUFncUpZM3RvajJxeXRXeTQ0dVNPb21MV0xaX0FNT09UUWNJLWZFSkFQS2g4ZGt1ekctd0VRdUg0WUVPb2lONGo3emd1U2tiNzhOcXA1ODVCRWdF0gG-AUFVX3lxTFBUT25jVjRjSEpTUEk2MUZVazdLeVA2cTV6TDE2YWtEb2hObEtpcnJMbGNCRnJ3N3p5WTFWWE5BTVpxSWU2dTg1VHdpS3dodjFzZ181d0p5NVR6THVobTRfVGpxb2pIMHZRcWJlMkplR2oyVDR2S1d3VjUzQ0RRZGtMSHhnSktUOEJsVEZhMTNBSmppeUx3ckpsQldHZnBwQk5WTXlkSVltZjIyTXJLaGtaUmdZZlZyTWwwUDlTZnc?oc=5",
-        "published": "2026-07-05T14:59:13+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Número de mortos em terremotos na Venezuela sobe para 3.342; presidente interina descarta 'convulsão social'",
-        "source": "G1",
-        "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdzlPRF92bi1tT2NEdGpjM0hwTndkRTRDUkhBMUJWUno1VEktTnQ4SlZiQjN5a190bFF4MUtGQklCNTdoNUI4R1NETy0tQmtxWmhrdlBTajgwRE5icUhJYlhHMmFnWDU5SUVVZVNiZEtiNUFybmphMFA1ME14eTBvTjlTSWdyWXVvUkxUbldMcFllQVJ4Ty1lZGhQUUU2emRMRWNjTTdESzVEdTJvTnVocUJ3eENMTE01MG1ieHhteWMzT0ZYMEpEbVpRQ2FTQVZiSHV3UXMwSdIB5gFBVV95cUxQRnlRNV9HWjgtQ2xwZlFtUlA5OGNOLUZYZURSUG5RSjRhWFJGNUdyOG1Qd2RXVFF2OUlhcWUzQW02ZFVoV0d2YllWVTlRbmRTYnJTNm5NOEw5Z2NHb3lZWGk1LVpMNmUxaHBsS2JnaFpDMkZXeGVraHJTN243MVFqY25PRm5zM3pkd2FJOFZYeHdiZDg5cUJCQ2YzWE5rdEd3SWlZTzNiMlY4Qi15M3MxbUJvZVAwNmo5d2VzQ3ZyMkUxRGMteTdSVnd3c25XTGV3N0UzWG5kc1BSS1Azd1pwWk5ELVZhdw?oc=5",
-        "published": "2026-07-05T21:15:29+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Trump se vangloria em discurso de vencer guerra, enquanto iranianos pedem vingança por Khamenei",
-        "source": "R7",
-        "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNaEVOQ29QbEhkY2ItT2UyM3BYbi12WmZFX2hmeXJEc3JkT3FVUlNLVnZfblFjbmlqc0hULTAweTNvSnZuYzcwV01nM2YyNkpMejQzQWNZQmY4Q2ZrWE5FdkcyajJ1MnBRbm93c21BMFpvMFgwLWxLb2xLV1VISVhvT3RUMXllcUJfa0RidEo1cHRSOHFOVXVtOVJNc3pKb1FVVE9CU1c3RU1COC0tNG1CZldHZmJUQ1p3QWJ5aS1UMjJaVU1mU3dURHc1MHhXQkVnaEFXZldZZ2xCQQ?oc=5",
-        "published": "2026-07-05T12:59:15+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Incêndios devastam florestas durante calor intenso na Europa",
-        "source": "UOL Notícias",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTW5ZTHR2MnJ6RzRfNjBqQmFHYnNlODRzTXg2YzRRb2lRUWNDYm9vak5hRkVwUFUtQVp6U2RHeDNIXzNWMk9xM2lsckF5ZDF5WXNSYUZESHF0RWJxUlFWakptR0VfRkR6YzBLV1ZEdnVBeE9iaUI5b3g0YjRqTGliMnM1b0NaZFJqY3BRWndUa1V6UFhzZjhyaXRBT1VPQlNDbE84VDB2ZU1DM1A0RmVlS2ZxakZ1U2RjRlFYbU1haW80RFhXeU5IZi1uN2hSLVE?oc=5",
-        "published": "2026-07-05T11:58:00+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Após excomunhão, padre de grupo ultraconservador aposta em retorno à Igreja sob 'outro papa'",
-        "source": "G1",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdjZva2I2ZmE1NnU4UUR2LVJidGZRWnJLYWJsckV5NFptSzJsX0JqbkkxeHNiYW9RdkZXMVVqSWxBVHBfTHhWalZCN0I1dXV5ckNHNnM0NjBpeTQzZXN6V3F4U1I0bjFNaG9aRzN1aDlLaUtFdExTWFg1MVkzVlF0SEh6ZTNkbXViVlNoV2Jkc19EdW85VlJMWUlpVmgxdzJtRkw3Ry1idWlSQ3dQazVnaEkyZ1JEcXEyemFaSFJDRHNUX3ZPMWhKaWxYSDVtYmlBd1dqdHBJOXjSAecBQVVfeXFMTWNROElsNFhGNEYzNFA1bnBPSVRxOGpXOUx1SUE0TklOOUVnUy1qN2hZOUhUQUd6V0tmd0ZtME9HQzRRSlhUbWpkMTJxbDUtR2tGcWlLTVF5MC1XTzNpaGthb0tyLXpCMmxxbHA4RG5VdE9YamVIOEV2WTc1X1VjUklaR0k0Rm1EZ2lsMTBpT2ctSWk1OTQ2R1p2S0U1MGJyX1Z2QjZxSVVQSVhHYmJPS3g4ZE91RTdZNmZMc0psWTE4ZHBkY0JsZHVFSHl3WUVmLVhfNkRkTzN6TWpZd3N1eE8wcHpVcDg0?oc=5",
-        "published": "2026-07-05T12:22:34+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Leão XIV: o amor e a sabedoria de Deus cuidam da humanidade ferida pelo mal",
-        "source": "Vatican News",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNazBEWVFRWmV6aXotTDBPODdacFpuZDlmWUkwUnJqNkoyLVF1bHpQUmdRZUJDVkV5aUFBMGpVN3JDSkduRWFrQllNcFNKb3M3alRCUDBnaUxPYXVXVUxFUnB2d3hvMk1MVXotWHZOaTlGRWRpWWNIelJWXzQ2RG9IQzV2ei0zY0JJdXBfLWFKVUpCZnFKczdKYlc2WnJlZzVJX0tpTFNR?oc=5",
-        "published": "2026-07-05T10:32:33+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Em ligação, Trump oferece a Putin ajuda para solucionar guerra na Ucrânia",
-        "source": "CNN Brasil",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOT3dKNm9QNkpBaWstaXRVZXVWcDM0RWQ0YW16Q1VhbE9kSU5HTWhvLVZkRGlwM2V2RnV6cVowaFd2aDhYd2k0X09rYXhLTlEwdTlJQ0xvdmFUUHlIbEkxZkNqc1VGbXlqTkR3TU5GdXF1Y1VRT1hYcnIyMXQ2aEwxWkhnMTFiT1NUMTBYSWw5UFROUnN3UF85ZFhCeW9hTk1VcElOTkZSSlVTX1ZYVFJNR29odlJsd1k?oc=5",
-        "published": "2026-07-05T06:44:36+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+        "title": "Assim que o robô rodar pela primeira vez, as manchetes de verdade aparecem aqui",
+        "source": "Copa Verde",
+        "link": "#",
+        "published": "2026-07-05T00:00:00+00:00",
+        "image": null,
+        "resumo": null,
+        "tag": "Mundo"
       }
     ],
-    "Brasil": [
-      {
-        "title": "Ex-mulher do goleiro Bruno é encontrada após 3 dias desaparecida",
-        "source": "Poder360",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTHMtWkxVMk8xdVdGU1RwY18zOXowdVV1VXBhS3FqNUozemFLTmtmUUJ1V19VWEw5Y2k4TUhmZTBUNF9IQjNCbzZfUm9qUWJpdjYwd3FRSFpUWWVOQlJrSWRxSjhjcU1LMzVLc0FDOXdhRzRLVkczaFZwXzBrVVBUQVFhODIzUHhZeHZ4N2RrdVdZTzJnc3d1ZGtWU2hKT0pRUFFZdFVvZWREQQ?oc=5",
-        "published": "2026-07-05T18:36:25+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Tenente da Rota baleado na cabeça segue internado em estado grave na UTI, em SP",
-        "source": "G1",
-        "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZnFxeF81Y2o2Q1V6QUwxQ1VPSG9vRnJJLTBrMTQ0RnlrRVdZeDZ3MWtyRnFyWlFyMmpUbkpRUFdPU0JDekh6alp1RHZlSHd3Zm1KTHdJYjdxQ3FSdlBXTWM3cUFHNklISVZ6a0UzNmZ6c2VHRXZGRURJMVBQbi1sWDlQOUtTSWJTZ3FPVnV1UVdIQnFobHBQVjVUMDhpVGVEX0tURzBwRFZORUlPUy13UXFBbW5Gc3lURjZQY1I4enRTTm5jWXNnY0l0TGFyVXVYUFQ40gHiAUFVX3lxTFBxTFc4NGxCMmRWTk9VRHRjMEVQTE1jVU1jQUdBaHVFNkloUFlHeG5iSnEwS0tlY1A1Rjd3WFd1ZmFJaVl6aXNrQmRiQnNDbFJ3YnZxdXNBUVJITzZrdndMLU5lOHdGTGZMNkNTejBwOERuWU43SmFZWG0ycXRSMXdES255SzhkMmczTWtxeHN0bTF2R2J5Mno4b3hxR0puVDFjMWV0SkUxM0ZBaUd1S01QX0lncHZiS2tib2ZTXzdHVkxMRV9jTTlPbjUwaFZ1MzlLRDhDWlFyd1JLbVRuLWZYY2c?oc=5",
-        "published": "2026-07-05T18:57:51+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Sem os dois mais votados, PT do Ceará cria estratégia para não perder cadeiras na Câmara Federal",
-        "source": "O POVO",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcXF5MGlwbHEwb3pfMTNDekRnZW1Ia19LR3htVldMWHl4Z0VyVEJJWWlmdTJuTHZyc2xUSk5wOXRiUGlLMTBTbWlXcTBvTk5CZWkzeXljbFJvUzNmVXY5NEs4dEJHd0RFQWotX3B0ZVUwdWs0SkhkbGJuSVdtbjA1d1huUlUzVXRfNy15SlFFcG9obUJmbTR1Z1ZHLWRkVWRWYXJIUVMyWDlYeWhPU0Z5MjFSVFlUUQ?oc=5",
-        "published": "2026-07-05T15:37:00+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Vereadora pivô de crise entre Flávio e Michelle prega união e diz não querer 'alimentar conflito'",
-        "source": "CartaCapital",
-        "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPUVdoa25qMmFndkZOdFE4RTFjYnJKcWFDOWpPalYwaTA4dVBnNHo5QXQxWHBOLUhHZ0E2UHVocEh2RDM1dkdQMEhSTnh3MGpRaU1meVdaQkU1NE1UQ3FSd21NdnA3YXBHdGVkY0IwWXowak1lQng4Qk50QXRzeVFwTEtvZ3dNY09pZmpUVzJBT1hPRm1GN1U4c3hTbzNiRjRqQ2hha3lkcDNpZ1dIMk1mb1dFSXZ5bm9Ib0Q0c1dXbzdnaHVGQmFJNkFMbFhVZWZIbTVLUWhaTWVGMHhjc3BObThrN1ZnbGc?oc=5",
-        "published": "2026-07-05T12:29:00+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Em Washington, Flávio diz que Lula age por tarifaço de Trump sobre Brasil",
-        "source": "CNN Brasil",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMTdaSXhMemwyQTdhTzBpYV8tZGpGbEVkR3BuaXZsUDIxV09seWtrU2Z5alRwZlFJRjdjTUtQaGtiOWxPc2RsdHJmVkNBa3AxMGxFdVQ1ak9ibmhaUXI1bF9rMDlrZHNpcUt6ZG5yNkVGNndHQTFzbU1NdDFhUkhtbk9TUXl0aFdidVN5dHEtRjZVNlRMMldFVVZ6TF9oWEx6UEI5NDN0Y3plSExGVzFraQ?oc=5",
-        "published": "2026-07-05T18:57:24+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Brasil x Noruega: Operação Lei Seca intensifica ações e terá 10 equipes de fiscalização no Rio durante jogo",
-        "source": "G1",
-        "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQVXhnZlNIQXJOaFJYRFJFa2VXZllITWVPN0xkMkV4d3RWRTFOYlo5cE5VYXFjdGx3ZV9zaHp6N2RFTWdkZjhaMGxyQjJSU2xLeGprd2EzVU1kaFo3eUJYRnNBekl4cEdSczZuVUxYUnc1ZDNKdmppeW5RUnZpUDBJQ2JzeTV2N3VTQ1BCSEFnRFFicEFpcUYweXh6aWFMTS1hMDdVS3dqeVNJa01JaGJsREZDY29pVG1SaFlldTVMZ2JVcElhLXE4TUpOTEd1aW03THRUQkVySExXMzM1UzNTemZROV9xYUlHbHBRcFQtYmJCdlVsclExVlBpV3Z2MUI3eVliWjlB0gGUAkFVX3lxTE5vdGQ5MU05RG80Wm1VQTBEU2VJV1NRYmVWRlV1RjBBN05EZ2F1RF9ETnlPN0RSNjNMcTczVXRka3FfV0RhbmtqaVBIS01CZnN3WUJRMS1PeWJqYTBRbV9KRDJXYlFuZ3oyTDlYVE1hbG9WZnlYYkp1Rmo0SDBHME5ZOFRMLWsyV2xqWVNteV9wcWRWOHpWZ3Y1bU1ScXhhUTRucEhmXy1kSEUxY2JwQ3MxWnVJUmI4SXRVWlpJY1hUOXJiN2MwZmNhX0hUbFBTcVJtRTFOX09fX2N2NHVIVXpMRi1YaXdBRF9DLUtpd1YtNC1vT2ZIVGZvMjhuUDN5eEI1YktVQzhBazVUcmFodHUyUXNvZw?oc=5",
-        "published": "2026-07-05T17:34:15+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Pernambuco se despede do deputado estadual Waldemar Borges",
-        "source": "Folha PE",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPemNaV010LUtDcmRSeV9JS0FrY0NSdzNhZGJJa0JQS2sxcmtKVmIzcm52OGp2WmMxRGtfTDR2c20wbE5GUnFkOVdsSFpOS2lnQTNtclRlZFNhQkxuNF9nTjVpVW9ySUkxcDd5NUhqQ0xrd1VxdzViaGxnOF9PNzFlb2ZHT3pWM2Z4dHFLWVh4bXRudEFIOEd4Zk9qQTVSVERQNkUwMXRJaHh5YkhXZzR3?oc=5",
-        "published": "2026-07-05T16:28:03+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Datafolha: aprovação da gestão Tarcísio em SP permanece em 45%",
-        "source": "G1",
-        "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPejN5VjJ3cG5SeDBybi0yWEJibUZzcC11Tnc4X1haQm5YazBoMERKWGp1NWZXZS1nSHRoUlFKNjhtY3JVQnIyRFlwWmR1bFV3ZmNjRGh3MnFTODRZTVBOU3RpaTlUUmc1b1Brd2pieHdwMkZ1UXdJaE5fLVVZczJVcGIyOUF4d3NjMFNQNHZ6NlY5TXR1U2w0aTA1YXVBZkM1VjJtc1dlTDPSAbcBQVVfeXFMT3dHRXUzUk1yam5CalAtS3lZNzBVQUJFS25mYTRWd0pwNVp6aFdVMmZRNmpocDVPRjZ2SkctQ3VkYWdwc2Z0OXlDcXZ3VjZIYmpOV3QwWFRwTU81ZUJmdjBUUGdnZEVjbHBJSk5PQU41VWRBcGRJWG9EbUFaZUhNajQ1S3pjRVBaVV8xRGROUUhPOGxQU0dHQjgtaDZmU21ld2VaTlJQSC15TFQyTFVwanU1MTJKYS1v?oc=5",
-        "published": "2026-07-05T03:12:59+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      }
-    ],
-    "Maringá": [
-      {
-        "title": "Maringá x Volta Redonda: onde assistir ao vivo, horário e escalações",
-        "source": "ge",
-        "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVnl3TXNWY2pSd0M1eDB2WkJpOFlvR0x4b3hScVBRd3lyRGUwTXBHTzNNSWxydzdWbklPaDlDSWc3Tk5ocVNERTRMcDh4TGRqdVY0RVVUMnNLTkc2OEFwNTJVaDN3elB6cjl4U3BVR1FXSXI0OXExWUpIWEVTamNvM21pZXYxTlhVVjVyNDhUSVp2QzhOX0lKZ0w5dG5hSFBEVTg5bDJxaHJ2UTNFdEptVlJZRzhGVW05cnU4TDJwYUtyYVlDcXplMV90TEsyOFFjamdvekRYaFhrc0nSAeoBQVVfeXFMTWR5QzhKWlVwWFQxSE40Yi1OUzFYTDVaenRmemk5SDVRd2ExV2lrMFplWUpwM05lRFdONXl6MjlJSkZVeFVhZk8xZG5LRDZuODVDVUxFMkt0eVZfSU5kMTBTS2lGMTE1QjdNZXVVTUtTaGxMSENZR0Zzb0RIQ3duZHk4N1BRME9VZV9tbjJfemFfTVdsRXhDc3ZJeUdGQW1JQktzdUl5S1V5Q1lEQkhVMmZyQ3FhQjdRVVVkRHRFY1kxakwwSWhINERNdGdVNklNeXBWR09yVmRIRmRYdVZkbzRfRVgwMXJEWHpn?oc=5",
-        "published": "2026-07-04T07:01:43+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Após dois meses sem vencer em casa, Maringá FC goleia o Volta Redonda e volta à zona de classificação da Série C",
-        "source": "gmconline.com.br",
-        "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQUjhzakEtRUMtcmphZjdfb1BSUEVaVnhCZjE5RExkQ19kVjJFdGdYN2QyY3IzNG9MTjVKTU5rS1EtWEdWblFUUFpMX0xYNGRwZFFzWEhzdmlyU2w3Ym1RMW44dkdjU1ZKQ1RfZjY0WU4zb1RNV3piNGFFOWlHd2QxbnJYcHVrMG03V1EyWU9aR2RRSWNuRTBPeGpacTBFaUtNQTBjZ09KeWlKYVdRNkEtWkJHUVBwaU16M3UyUWxOWWxnbGpBR3BfZFBSUWhOdjVZMWxGbVNnWm5KRUlQS1l5SzltZHFpUEN6N1hVRmJpOVRUSHB0b2xhenItMWxkaVhZcGZHRdIBigJBVV95cUxON0ttX3oyLU5GRnd5OVEtSV9FQjAxMEZuRWliT1J6bnZROEtRUW9EWnltdHhCWGlLWGZGUzU0RzZ5a2NqdTdQU1A3V20xZmNDazE2WVB6ejBpMjlIQ09NS2R5TzJCUklvcTNwbm9zTWIyYVBhcWwtdnB3Rkk1R01jTVI2WEVpVXl2Ukgtb3JoSzVJT295bGlCTDZhT1FrTzh4Z0xhN1JKNG81eUJfbUEzSlBPN2xIN25ocko1c3BidEFVYUxtZXJSRS1PdHZfWkV6OUVUNnlxa0ZKRF9KM0V2dnRISWZHdzlVcHRXOUNKQjNDMWxIV1draFEzZ1ZBQlFuWjk3djJYWFIzdw?oc=5",
-        "published": "2026-07-04T23:57:00+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Voltaço perde para o Maringá na Série C",
-        "source": "A Voz da Cidade",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8yeFA4em5ZVDUyV1JsVUdEWnhXdjRyTDBSNUVpSkktc1BpQjhWVzBGQXRNc0p0UmRWUHZjczRVSmcybTBPczNKdXAtbFQ0dG53T2cxWnVDU0Y3VzJqdmQ0bjFyWkNVWXNacWdJU1VDUzNJQ2poSlRN?oc=5",
-        "published": "2026-07-05T12:26:48+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Maringá 4 x 0 Volta Redonda | Campeonato Brasileiro Série C: melhores momentos",
-        "source": "ge",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZEsta1dHSmczd2dOSDBEcks1NkVTYXBGRXl6X3RyeWNWY0xpS3ZIZXBtMnNNUjV1UHdUanhqUXZGenEwN09MdGYxTy1QdnM1cTJhQ0E2QlZRaDg4RHA3RnVySFNaNU1rZk1JbXlYWnFOcE5MSlliYVdYNlJqbHh0cGNQZnc5a18wNHJkQXNqYnZTWnRxblRHalAzZw?oc=5",
-        "published": "2026-07-04T07:00:00+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Obituário/Maringá",
-        "source": "Angelo Rigon",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5RLXVPU2JHb2RyUU1ZTkRKM0xhQUdsSmdhMFBlUEJFb2o0aXBWaFQ2eXV2Y0lYSUJsYUM3OEpuMlJvUVN0ZHVFRWJlbDB5TGZtSWdDSkppZmxGaGlzenRveGplVGlBc1RQVmR4X0FR0gF2QVVfeXFMT0ZRR1lHX3hYdUp3WW5UNHNxQVlUM2N0QTdJdEQ3MGdvX2ZqcjNubUFRenNXTVNEWEtVekswODJUVEctRjJiRHRqR1FhSTJPOUtHTW9KRlNEOUdNUmlHM2xvYXc1ckw4QmYzZW1mTEVrZUNsY3NYUQ?oc=5",
-        "published": "2026-07-05T11:02:12+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Como usar o novo aplicativo do transporte coletivo de Maringá?",
-        "source": "Tribuna do Paraná",
-        "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ0toSG5nSUdoeUVXWmMwcDVCRk9mdjU1LTltZ2t5Yl9MNU5MYTAwa0RWUlFsR3FBQjFDNVhvMllZdzNtX2dUdXRlN0NWMG12MWkwOF9jTHlfOWN1V054WjdZcm04dGtJWXNRQ1hoVWtYYXpTYnJTVDM4YlFFQTV5bmtaYUNQYTlhVUxhOdIBkgFBVV95cUxNSUxjOTFTNmtBS2F0SkJpbXA3NW5acmZTVF91Tkpkb2NTR0ozOGNJMVMwbmVibDJocndDRFNlWjhsa1BDdDJ5V0lRUXBwZWdOLWdHc0dCUm5fNFZadWY1ZjMwd0xETVFlTjhFSmx6VWk4RklFOHJodVc0VFVQc0h6UFhUdkQ5d0I0U0t0SldYU2dpZw?oc=5",
-        "published": "2026-07-05T20:30:00+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "'Maringá em Rotas' terá programação especial durante as férias de julho",
-        "source": "maringa.pr.gov.br",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbE1HOEdMOTRzSEFheFYzYl8ya1hUOVFWbTRJNTR0T1pYMW9QSjBKb0FIWnBlMENQcVFjeHlVbzAwYlBwaENNR3l5YnRpR0RvQXdPejRIeDkxM3BxRXBtZkF3S3E2YzltTkJxemlnMjdXWGxDQ25rOXJ4cVRNT2NCUzFVbjA2M3VoazlvRHJXcmx3a0xYZXVPbWVRWFdrWS1CNDE2RVA4b2k0Z0hVNEhLeUNQcC0?oc=5",
-        "published": "2026-07-02T07:00:00+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      },
-      {
-        "title": "Mototaxista fica preso sob carro após grave acidente em cruzamento movimentado de Maringá",
-        "source": "gmconline.com.br",
-        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcDJfRzRPN3U4eW1qZzRUZktFOTkwblcxZTJ5MmxXV3pmaWJ5cWM4azM2dHZ4Y0NGN3FLaHBJY3hoTjVZTlNBLUd4UWhhakg2MjJNd3JJcENtZDZKMS0xN3BxZUZSU0NjNmlpMVFEbWFXYk1pZkF6cHlkcEdiWU1MZ2U0SWpBN214RDFDcHFETmRIYUswdFRBZUpKVXVaSHVJNVNMbkRYc2Vpd0ExVzc4bWtIbFc1VndsTF91SDZDU24tSnVLdjZXLWcyc9IB0AFBVV95cUxOTjZoS0FKblRMY2hTMkx3LXAzOUhxSUhzVjhhQjZ2MXNuMW1RNGE0QkllVmtmdThVOXJYSlQwY3o2WkRMaUhRX0FzVks2ZXFQaFRDN2xjbVNKSnFSMUtaeGV0U0czeUlmaHRXV00xVnhrLW1xN2RUYkctcGtXRUV1OWx1R0ktenpqRjVTLWp0VlhZcFBBXy1rakEzRnBQNzlwNm9YdXVoTUJpY1lrRmdabjhnUlFpbTNXYkducXE2eVJINDA0Qkx0YUE3cjNURlh0?oc=5",
-        "published": "2026-07-04T19:18:06+00:00",
-        "image": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-      }
-    ]
+    "Brasil": [],
+    "Maringá": []
   }
 }
