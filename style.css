@@ -376,6 +376,13 @@ footer {
 
 .original-link:hover { opacity: 0.75; }
 
+.article-disclaimer {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--sage);
+  margin: 1rem 0 0.75rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .card { animation: none; opacity: 1; transform: none; }
 }
