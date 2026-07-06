@@ -78,9 +78,7 @@ function render(category) {
   items.forEach((item, i) => {
     const card = document.createElement('a');
     card.className = 'card';
-    card.href = item.link;
-    card.target = '_blank';
-    card.rel = 'noopener noreferrer';
+    card.href = `article.html?id=${encodeURIComponent(item.id)}`;
     card.style.animationDelay = `${i * 60}ms`;
 
     card.innerHTML = `

@@ -4,6 +4,7 @@ Busca notícias de Mundo, Brasil e Maringá (várias fontes locais + Google News
 sem precisar de API key de notícia), gera um resumo curto + tag de assunto com a
 API da Anthropic, e publica em /data/news.json + /data/archive/AAAA-MM-DD.json.
 """
+import hashlib
 import json
 import os
 import time
@@ -46,37 +47,53 @@ def clean_title(raw_title, source_hint):
 
 
 def get_page_meta(url):
-    """Pega og:image e a meta description (usada como contexto pro resumo da IA)."""
-    image, description = None, ""
+    """Pega og:image, og:video (ou embed do YouTube) e a meta description
+    (usada como contexto pro resumo da IA)."""
+    image, video, description = None, None, ""
     try:
         resp = requests.get(url, headers=HEADERS, timeout=FETCH_TIMEOUT, allow_redirects=True)
         soup = BeautifulSoup(resp.text, "html.parser")
+
         img_tag = soup.find("meta", property="og:image") or soup.find("meta", attrs={"name": "og:image"})
         if img_tag and img_tag.get("content"):
             image = img_tag["content"]
+
         desc_tag = soup.find("meta", property="og:description") or soup.find("meta", attrs={"name": "description"})
         if desc_tag and desc_tag.get("content"):
             description = desc_tag["content"]
+
+        video_tag = soup.find("meta", property="og:video:secure_url") or soup.find("meta", property="og:video")
+        if video_tag and video_tag.get("content"):
+            video = video_tag["content"]
+        else:
+            # procura um embed de YouTube na página (comum em matérias com vídeo)
+            iframe = soup.find("iframe", src=lambda s: s and ("youtube.com" in s or "youtube-nocookie.com" in s))
+            if iframe and iframe.get("src"):
+                video = iframe["src"]
     except Exception:
         pass
-    return image, description
+    return image, video, description
 
 
 def summarize_with_ai(title, description, category):
-    """Gera um resumo curto original + uma tag de assunto. Se não houver API key
-    configurada, ou se a chamada falhar, volta pra manchete crua sem quebrar o site."""
+    """Gera um resumo curto (pro card) + uma explicação mais completa (pra página
+    da matéria) + uma tag de assunto. Se não houver API key configurada, ou se a
+    chamada falhar, volta pra manchete crua sem quebrar o site."""
     if not ANTHROPIC_API_KEY:
-        return None, None
+        return None, None, None
 
     prompt = (
         f"Categoria: {category}\n"
         f"Manchete: {title}\n"
         f"Descrição da fonte: {description or '(sem descrição disponível)'}\n\n"
-        "Com base só nessas informações, responda APENAS um JSON válido, sem markdown, "
-        "no formato exato: {\"resumo\": \"2 frases em português, no seu próprio texto, "
-        "explicando do que se trata a notícia\", \"tag\": \"uma palavra ou expressão curta "
-        "de 1 a 2 palavras que categorize o assunto, ex: Política, Trânsito, Educação, "
-        "Economia, Clima, Segurança, Saúde, Cultura\"}"
+        "Com base só nessas informações (não invente fatos que não estão aqui), "
+        "responda APENAS um JSON válido, sem markdown, no formato exato: "
+        "{\"resumo\": \"1 frase curta em português, seu próprio texto, pra aparecer "
+        "num card de lista\", \"explicacao\": \"4 a 6 frases em português, seu próprio "
+        "texto, explicando com mais contexto do que se trata a notícia, pra alguém que "
+        "só vai ler isso e não a matéria original\", \"tag\": \"uma palavra ou expressão "
+        "curta de 1 a 2 palavras que categorize o assunto, ex: Política, Trânsito, "
+        "Educação, Economia, Clima, Segurança, Saúde, Cultura\"}"
     )
 
     try:
@@ -89,7 +106,7 @@ def summarize_with_ai(title, description, category):
             },
             json={
                 "model": ANTHROPIC_MODEL,
-                "max_tokens": 200,
+                "max_tokens": 400,
                 "messages": [{"role": "user", "content": prompt}],
             },
             timeout=20,
@@ -98,10 +115,10 @@ def summarize_with_ai(title, description, category):
         text = resp.json()["content"][0]["text"].strip()
         text = text.replace("```json", "").replace("```", "").strip()
         parsed = json.loads(text)
-        return parsed.get("resumo"), parsed.get("tag")
+        return parsed.get("resumo"), parsed.get("explicacao"), parsed.get("tag")
     except Exception as e:
         print(f"  aviso: resumo por IA falhou para '{title[:40]}...': {e}")
-        return None, None
+        return None, None, None
 
 
 def build_category(name, feed_urls):
@@ -141,12 +158,15 @@ def build_category(name, feed_urls):
 
     entries = []
     for entry in raw_entries:
-        image, description = get_page_meta(entry["link"])
-        resumo, tag = summarize_with_ai(entry["title"], description, name)
+        image, video, description = get_page_meta(entry["link"])
+        resumo, explicacao, tag = summarize_with_ai(entry["title"], description, name)
         entries.append({
+            "id": hashlib.md5(entry["link"].encode("utf-8")).hexdigest()[:10],
             **entry,
             "image": image,
+            "video": video,
             "resumo": resumo,
+            "explicacao": explicacao,
             "tag": tag or name,
         })
     return entries
