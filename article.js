@@ -32,6 +32,10 @@ function youtubeEmbedUrl(url) {
 
 function render(item, category) {
   const embed = item.video ? youtubeEmbedUrl(item.video) : null;
+  const paragraphs = (item.materia || item.resumo || 'Sem conteúdo disponível pra essa matéria ainda.')
+    .split(/\n\n+/)
+    .map(p => `<p>${p}</p>`)
+    .join('');
 
   articleContent.innerHTML = `
     <span class="card-tag">${item.tag || category}</span>
@@ -41,9 +45,10 @@ function render(item, category) {
       ? `<div class="article-video"><iframe src="${embed}" allowfullscreen loading="lazy"></iframe></div>`
       : (item.image ? `<img class="article-image" src="${item.image}" alt="">` : '')}
     <div class="article-body">
-      ${item.explicacao ? `<p>${item.explicacao}</p>` : (item.resumo ? `<p>${item.resumo}</p>` : '<p>Sem resumo disponível pra essa matéria ainda.</p>')}
+      ${paragraphs}
     </div>
-    <a class="original-link" href="${item.link}" target="_blank" rel="noopener noreferrer">Ler a matéria completa em ${item.source || 'fonte original'} →</a>
+    <p class="article-disclaimer">Texto reescrito automaticamente por IA a partir da matéria original, com propósito informativo.</p>
+    <a class="original-link" href="${item.link}" target="_blank" rel="noopener noreferrer">Ver a matéria original em ${item.source || 'fonte original'} →</a>
   `;
 }
 
